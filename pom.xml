@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.ameesh</groupId>
+    <artifactId>distribution-management-pom</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+
+    <name>Distribution Management</name>
+    <description>
+        Base POM Specifying Distribution Management
+    </description>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>Releases Repository</name>
+            <url>http://nexus.ameesh.net/repository/maven-releases</url>
+            <uniqueVersion>false</uniqueVersion>
+        </repository>
+        <snapshotRepository>
+            <uniqueVersion>true</uniqueVersion>
+            <id>nexus</id>
+            <name>Snapshots Repository</name>
+            <url>http://nexus.ameesh.net/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
