@@ -16,7 +16,7 @@
         <repository>
             <id>nexus</id>
             <name>Releases Repository</name>
-            <url>https://nexus.ameesh.net/repository/maven-releases</url>
+            <url>https://nexus.ameesh.net/repository/maven-releases/</url>
             <uniqueVersion>false</uniqueVersion>
         </repository>
         <snapshotRepository>
